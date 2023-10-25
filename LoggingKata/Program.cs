@@ -15,13 +15,13 @@ namespace LoggingKata
             // TODO:  Find the two Taco Bells that are the furthest from one another.
             // HINT:  You'll need two nested forloops ---------------------------
 
-            //logger.LogInfo("Log initialized");
+            //logger.LogInfo("Log initialized"); ****Commented out for better run presentation
 
             // use File.ReadAllLines(path) to grab all the lines from your csv file
             // Log and error if you get 0 lines and a warning if you get 1 line
             var lines = File.ReadAllLines(csvPath);
 
-            //logger.LogInfo($"Lines: {lines[0]}");
+            //logger.LogInfo($"Lines: {lines[0]}"); ****Commented out for better run presentation
 
             // Create a new instance of your TacoParser class
             var parser = new TacoParser();
@@ -87,6 +87,8 @@ namespace LoggingKata
             Console.WriteLine("Can I get some hot sauce for my hot sauce?");
             Console.ResetColor();
             Console.WriteLine();
+            // Extra bonus.  Maybe add another method to find the 2 closest taco bells or the
+            // closest taco bell to each other
         }
     }
 }
