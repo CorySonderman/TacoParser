@@ -83,6 +83,7 @@ namespace LoggingKata
             Console.Write($"{tacoBell2.Name}");
             Console.ResetColor();
             Console.WriteLine($"have the farthest distance between them.");
+            Console.WriteLine($"They are {Math.Round(distance / 1609.34)} miles apart.");
             Console.ForegroundColor= ConsoleColor.DarkRed;
             Console.WriteLine("Can I get some hot sauce for my hot sauce?");
             Console.ResetColor();
